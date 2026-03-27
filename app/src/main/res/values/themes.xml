@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Netflix2" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+
+        <!-- A colorPrimary é a cor principal do aplicativo e que mais aparece na interface
+         No início ela pode chamar a atenção, mas, como está presente em muitos elementos acaba se tornando normal para o olhar do usuário
+          Ex: Toolbar, botões, Flooting action, barra de progreso, caixa de texto -->
+        <item name="colorPrimary">@color/primaria</item>
+
+        <!-- colorPrimaryVariant: cor de variação, normalmente mais escura que a cor primária e
+        tem função de servir como apoio visual e dar contraste. Usada principalmente em áreas que precisam de
+        diferenciação em relação a cor principal, como  a barra de status e superfícies elevadas, que representam
+        camada superior ou efeitos de profundidade-->
+        <item name="colorPrimaryVariant">@color/primaria_variacao</item>
+
+        <!-- colorSecundary: usada para destacar elementos importantes ou interativos.
+        Diferente da cor primária, ela não aprece com frequência, justamente por isso consegue chamar
+        mais atenção. É a cor que puxa o olhar do usuário, sendo ideal para indicar ações ou elementos
+        que precisam ser percebidos rapidamete
+        Ex: botão cancelar, botão voltar, botão pular -->
+        <item name="colorSecondary">@color/secundaria</item>
+
+        <!-- cor da barra de status
+         ?attr em vez de apontar para uma cor específica, a referência é feita a um atributo de tema.
+         Quando a aplicação é executada , o Android verefica o tema ativo (por exemplo:
+         modo claro ou escuro) -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+    <style name="Theme.Netflix2" parent="Base.Theme.Netflix2" />
+</resources>
