@@ -65,9 +65,10 @@
         android:id="@+id/imgNomeFilme"
         android:layout_width="150dp"
         android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/guidelineHorizontalSegunda"
-        app:srcCompat="@drawable/tologo"
-        tools:layout_editor_absoluteX="142dp" />
+        app:srcCompat="@drawable/logo1" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineHorizontalPrimeira"
@@ -81,7 +82,99 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="74dp" />
+        app:layout_constraintGuide_percent="0.10259918" />
+
+    <TextView
+        android:id="@+id/txtDivertido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Divertido"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/txtHumoristico"
+        app:layout_constraintEnd_toStartOf="@+id/txtHumoristico"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/guideLineEsquerda"
+        app:layout_constraintTop_toTopOf="@+id/txtHumoristico" />
+
+    <TextView
+        android:id="@+id/txtHumoristico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humorístico"
+        android:textColor="@color/white"
+        android:padding="2dp"
+        android:layout_margin="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtComedia"
+        app:layout_constraintTop_toBottomOf="@id/GuideLineHorizontalTerceira"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtDivertido"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <TextView
+        android:id="@+id/txtComedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comédia"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/txtHumoristico"
+        app:layout_constraintEnd_toEndOf="@id/guideLineDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtHumoristico"
+        app:layout_constraintTop_toTopOf="@+id/txtHumoristico" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GuideLineHorizontalTerceira"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.45"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineEsquerda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineDireita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <Button
+        android:id="@+id/btnAssistir"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:textSize="13sp"
+        android:text="Assistir"
+        android:drawableLeft="@drawable/icassistir"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="354dp" />
+
+    <Button
+        android:id="@+id/btnMinhaLista"
+        android:layout_width="116dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@drawable/icplus"
+        android:text="MINHA LISTA"
+        android:textSize="10sp"
+        app:iconSize="20dp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="437dp" />
+
+    <Button
+        android:id="@+id/btnInfo"
+        android:layout_width="116dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@drawable/icinfo"
+        android:text="DETALHES"
+        android:textSize="10sp"
+        app:iconSize="20dp"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="437dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
