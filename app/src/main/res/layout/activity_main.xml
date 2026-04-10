@@ -9,14 +9,14 @@
 
     <ImageView
         android:id="@+id/imgCapa"
-        android:scaleType="centerCrop"
         android:layout_width="match_parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_height="360dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/theoffice"
-        tools:layout_editor_absoluteX="15dp" />
+        app:srcCompat="@drawable/theoffice" />
 
     <ImageView
         android:id="@+id/imgLogo"
@@ -81,7 +81,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guidelineHorizontalSegunda"
+        app:layout_constraintTop_toBottomOf="@+id/txtFilmes"
         app:srcCompat="@drawable/logo_branca" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -119,7 +119,7 @@
         android:padding="2dp"
         android:layout_margin="2dp"
         app:layout_constraintEnd_toStartOf="@+id/txtComedia"
-        app:layout_constraintTop_toBottomOf="@id/GuideLineHorizontalTerceira"
+        app:layout_constraintTop_toBottomOf="@id/imgNomeFilme"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/txtDivertido"
         tools:layout_editor_absoluteY="245dp" />
@@ -160,7 +160,7 @@
         android:id="@+id/btnAssistir"
         android:layout_width="120dp"
         android:layout_height="48dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/icassistir"
         android:text="Assistir"
         android:textSize="10sp"
@@ -216,7 +216,7 @@
         android:id="@+id/imgFilme1"
         android:layout_width="85dp"
         android:layout_height="56dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toStartOf="@+id/imgFilme2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@id/guideLineEsquerda"
